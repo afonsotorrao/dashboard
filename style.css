@@ -1,0 +1,390 @@
+body {
+    height:100vh;
+    width:100vw;
+    margin:0px;
+    padding:0px;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.main {
+    display:grid;
+    grid-template-columns: 16% 28% 28% 28%;
+    grid-template-rows: 16% 28% 28% 28%;
+    grid-template-areas: "sidebar nav nav nav"
+    "sidebar projects projects info"
+    "sidebar projects projects info"
+    "sidebar projects projects info";
+    height:100%;
+    overflow:hidden
+}
+
+
+.sidebar {
+    grid-area:sidebar;
+    background-color: #38bdf8;
+    display: grid;
+    grid-template-rows: 5% 30% 20%;
+    row-gap:5%
+}
+
+.sidebar p, h3 {
+    cursor:pointer;
+    font-weight:bold;
+    color: white;
+    margin-left:5%
+}
+
+h3 {
+    font-size:24px
+}
+
+.dashboard img {
+    height:30px;
+    width:30px;
+}
+
+.main-links {
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.cell {
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.link {
+    grid-column-start: 2;
+    align-self:center;
+    margin-bottom:5%;
+}
+
+.dashboard {
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    
+}
+
+#privacy {
+height:32px;
+width:32px
+}
+
+.img {
+    grid-column-start:1;
+    align-self:center;
+    margin-left:auto;
+    margin-right:auto
+}
+
+
+.nav {
+    grid-area:nav;
+    background-color:whitesmoke;
+    display:grid;
+    grid-template-columns: 60% 40%;
+    box-shadow:0 2px 2px -2px gray;
+}
+
+.nav-left, .nav-right {
+    display:grid;
+    grid-template-rows:40% 60%
+}
+
+.left-down {
+    display:grid;
+    grid-template-columns: 10% 70%;
+}
+
+.right-down {
+    display:grid;
+    grid-template-columns: 34% 22% 22% 22%;
+}
+
+.left-up {
+    display:grid;
+    grid-template-columns: 10% 70%;
+}
+
+.right-up {
+    display:grid;
+    grid-template-columns: 30% 30% 10% 30%;
+}
+
+#otherPic {
+    border-radius:50%;
+    width:40px;
+    height:40px;
+    align-self: center;
+    cursor:pointer
+}
+
+#bell {
+    width:28px;
+    height:28px;
+    align-self: center;
+    margin-left:70%;
+    cursor:pointer
+}
+
+.right-up p {
+    align-self: center;
+    font-weight:bold;
+    font-size:18px;
+    cursor:pointer;
+    margin-left:10%
+}
+
+.right-up p:hover {
+    text-decoration:underline
+}
+
+#profilePic {
+    border-radius: 50%;
+    width:70px;
+    height:70px;
+    margin-left:15%
+}
+
+.welcome {
+    display:grid;
+    grid-template-rows: 1fr 2fr;
+    margin-top:2%
+}
+
+.hi {
+    align-self: center;
+    font-weight:bold;
+    font-size:14px
+}
+
+.name {
+    font-weight:bold;
+    font-size:20px;
+    margin-top:5px
+}
+
+.name:hover {
+    cursor:pointer;
+    text-decoration:underline
+}
+#magnify {
+    width:24px;
+    height:24px
+}
+
+input {
+    width:80%;
+    height:50%;
+    background-color: #e2e8f0;
+    align-self:center;
+    border-radius:2em;
+    outline: none;
+    border-style:hidden;
+    overflow:hidden
+}
+
+button {
+    width:60%;
+    height:45%;
+    background-color:#38bdf8;
+    color:white;
+    border:solid #38bdf8;
+    border-radius:2em;
+    align-self:center;
+    cursor:pointer;
+    margin-left:auto;
+    margin-right:auto;
+    font-weight:bold;
+    font-size:18px;
+    overflow:hidden
+}
+
+button:hover {
+    background-color:#002244
+}
+
+.projects {
+    grid-area:projects;
+    background-color:#e2e8f0;
+    display:grid;
+    grid-template-rows:5% 95%
+}
+
+.title {
+    align-self: center;
+    font-weight: bold;
+    font-size:20px;
+    margin-top:2%;
+}
+
+.projects .title {
+    margin-left:4%;
+}
+
+.content {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    overflow:hidden
+}
+
+.project {
+    background-color: white;
+    height:85%;
+    width:85%;
+    border-radius:1em;
+    align-self:center;
+    margin-left:auto;
+    margin-right:auto;
+    display:grid;
+    grid-template-columns: 3% 97%;
+    overflow:hidden
+}
+
+.column {
+    background-color:gold;
+    border-top-left-radius:1em;
+    border-bottom-left-radius: 1em;
+}
+
+.case {
+    display:grid;
+    grid-template-rows:75% 25%
+}
+
+.interact {
+    display:flex;
+    justify-content: flex-end;
+    margin-right:2%
+}
+
+.btn {
+    height:30px;
+    width:30px;
+    margin:2%;
+    cursor:pointer
+}
+
+.details {
+    display:grid;
+    grid-template-rows:20% 80%
+}
+
+.client {
+    font-weight:bold;
+    align-items: center;
+    margin-left:2%;
+    margin-top:3%
+}
+
+.client:hover {
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+.resume {
+    width:90%;
+    margin-left:2%;
+    margin-top:3%;
+    color:gray
+}
+
+.info {
+    grid-area:info;
+    display:grid;
+    grid-template-rows:60% 40%;
+    grid-template-areas: "announcements"
+   "trending"
+}
+
+.announcements {
+grid-area:announcements;
+background-color:#e2e8f0;
+display:grid;
+grid-template-rows: 10% 90%;
+}
+
+
+.news {
+   
+    height:100%;
+    width:80%;
+    background-color:white;
+    border-radius:1em;
+    display:grid;
+    grid-template-rows:1fr 1fr 1fr;
+    margin-top:2%
+}
+
+.new {
+    display:grid;
+    grid-template-rows:20% 80%;
+}
+
+.idk {
+    align-items: center;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:4%;
+    font-size:14px;
+    color:gray
+}
+
+.headline {
+    margin-left:10%;
+    margin-top:4%;
+    font-weight:bold
+}
+
+#underline:after {
+    content: "";
+    display: block;
+    width: 70%;
+    margin: 0 auto 0;
+    border-bottom: solid gray;
+    border-width:1px
+}
+
+.trending {
+    grid-area:trending;
+    background-color:#e2e8f0;
+    display:grid;
+    grid-template-rows: 15% 85%;
+}
+
+.trends {
+    display:grid;
+    grid-template-rows:1fr 1px 1fr 1px 1fr 1px 1fr;
+    background-color:white;
+    border-radius:1em;
+    height:90%;
+    width:80%;
+    margin-top: 2%
+}
+
+.trend {
+    color:gray;
+    text-indent:10%;
+    margin-top:5%
+}
+
+.trend:hover {
+    text-decoration:underline;
+    color:black;
+    cursor:pointer
+}
+
+.line {
+    display:block;
+    background-color:gray;
+    width:80%;
+    height:100%;
+    margin-left:10%;
+}
+
+
+.announcements .title {
+    margin-left:1%;
+}
